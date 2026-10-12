@@ -1,0 +1,7 @@
+=== bench_server (3 runs) ===
+ticks=300000 elapsed_s=0.0881 ticks_per_sec=3406162.7 ms_per_tick=0.00029 budget_ms_per_tick=7.81250 sink=13109344269149844900
+ticks=300000 elapsed_s=0.0865 ticks_per_sec=3467498.8 ms_per_tick=0.00029 budget_ms_per_tick=7.81250 sink=13109344269149844900
+ticks=300000 elapsed_s=0.0851 ticks_per_sec=3525544.5 ms_per_tick=0.00028 budget_ms_per_tick=7.81250 sink=13109344269149844900
+=== replay_tool record+replay 45000 ticks ===
+recorded 45000 ticks (seed=2026) to /tmp/sample_match.bin
+replayed 45000 ticks, bit_identical=true

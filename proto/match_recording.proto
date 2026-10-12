@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package matchrec;
+
+// One player's command for one simulation tick.
+message InputFrame {
+  int32 move_x = 1;
+  int32 move_y = 2;
+  uint32 ability = 3;
+  uint32 target = 4;
+}
+
+// All ten players' inputs for one tick, plus the checksum computed live
+// right after the tick was applied. The checksum travels with the recording
+// so replay can be checked against it without re-running the original
+// process.
+message TickRecord {
+  uint64 tick = 1;
+  repeated InputFrame inputs = 2;
+  uint64 checksum = 3;
+}
+
+// A full match recording: every input ever applied, in tick order, plus the
+// seed the match started from.
+message MatchRecording {
+  uint64 seed = 1;
+  uint32 player_count = 2;
+  repeated TickRecord ticks = 3;
+}

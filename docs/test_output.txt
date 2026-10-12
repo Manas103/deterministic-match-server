@@ -1,0 +1,61 @@
+Running main() from /mnt/c/Users/Manas/Downloads/Auto Job Applier/Total Job Application process flow/projects/deterministic-match-server/build/_deps/googletest-src/googletest/src/gtest_main.cc
+[==========] Running 20 tests from 5 test suites.
+[----------] Global test environment set-up.
+[----------] 5 tests from Fixed
+[ RUN      ] Fixed.IntRoundTrip
+[       OK ] Fixed.IntRoundTrip (0 ms)
+[ RUN      ] Fixed.AddSubMulAreExact
+[       OK ] Fixed.AddSubMulAreExact (0 ms)
+[ RUN      ] Fixed.DivisionMatchesIntDivisionWhenExact
+[       OK ] Fixed.DivisionMatchesIntDivisionWhenExact (0 ms)
+[ RUN      ] Fixed.DeterministicAcrossRepeatedComputation
+[       OK ] Fixed.DeterministicAcrossRepeatedComputation (0 ms)
+[ RUN      ] Fixed.SqrtMatchesSlowReferenceOracleExactly
+[       OK ] Fixed.SqrtMatchesSlowReferenceOracleExactly (0 ms)
+[----------] 5 tests from Fixed (0 ms total)
+
+[----------] 4 tests from Sim
+[ RUN      ] Sim.TenPlayersSimulated
+[       OK ] Sim.TenPlayersSimulated (0 ms)
+[ RUN      ] Sim.SameSeedProducesBitIdenticalChecksumStream
+[       OK ] Sim.SameSeedProducesBitIdenticalChecksumStream (17 ms)
+[ RUN      ] Sim.DifferentSeedProducesDifferentChecksumStream
+[       OK ] Sim.DifferentSeedProducesDifferentChecksumStream (13 ms)
+[ RUN      ] Sim.AbilitiesEventuallyReduceSomePlayerHealth
+[       OK ] Sim.AbilitiesEventuallyReduceSomePlayerHealth (7 ms)
+[----------] 4 tests from Sim (37 ms total)
+
+[----------] 6 tests from LuaAbilities
+[ RUN      ] LuaAbilities.FireballDamagesCloseTargetMore
+[       OK ] LuaAbilities.FireballDamagesCloseTargetMore (6 ms)
+[ RUN      ] LuaAbilities.FireballDamagesFarTargetLess
+[       OK ] LuaAbilities.FireballDamagesFarTargetLess (6 ms)
+[ RUN      ] LuaAbilities.HealRestoresHealth
+[       OK ] LuaAbilities.HealRestoresHealth (6 ms)
+[ RUN      ] LuaAbilities.HealDoesNotExceedMaxHealth
+[       OK ] LuaAbilities.HealDoesNotExceedMaxHealth (6 ms)
+[ RUN      ] LuaAbilities.DashMovesCasterByDashDistanceInMoveDirection
+[       OK ] LuaAbilities.DashMovesCasterByDashDistanceInMoveDirection (6 ms)
+[ RUN      ] LuaAbilities.DeathClampsHealthAtZeroAndClearsAlive
+[       OK ] LuaAbilities.DeathClampsHealthAtZeroAndClearsAlive (7 ms)
+[----------] 6 tests from LuaAbilities (39 ms total)
+
+[----------] 3 tests from Replay
+[ RUN      ] Replay.EveryInputAppendedToRecording
+[       OK ] Replay.EveryInputAppendedToRecording (6 ms)
+[ RUN      ] Replay.BitIdenticalChecksumOver40000PlusTicks
+[       OK ] Replay.BitIdenticalChecksumOver40000PlusTicks (240 ms)
+[ RUN      ] Replay.SaveAndLoadRoundTripIsByteIdentical
+[       OK ] Replay.SaveAndLoadRoundTripIsByteIdentical (48 ms)
+[----------] 3 tests from Replay (296 ms total)
+
+[----------] 2 tests from Divergence
+[ RUN      ] Divergence.LocalizesToExactFirstDisagreeingTick
+[       OK ] Divergence.LocalizesToExactFirstDisagreeingTick (12 ms)
+[ RUN      ] Divergence.NoMismatchReportedWhenStreamsAgree
+[       OK ] Divergence.NoMismatchReportedWhenStreamsAgree (0 ms)
+[----------] 2 tests from Divergence (12 ms total)
+
+[----------] Global test environment tear-down
+[==========] 20 tests from 5 test suites ran. (386 ms total)
+[  PASSED  ] 20 tests.

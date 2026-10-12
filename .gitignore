@@ -1,0 +1,16 @@
+build/
+out/
+*.o
+*.obj
+*.exe
+*.pb.cc
+*.pb.h
+__pycache__/
+venv/
+.pytest_cache/
+*.log
+.vs/
+.vscode/
+CMakeCache.txt
+CMakeFiles/
+*.bin
